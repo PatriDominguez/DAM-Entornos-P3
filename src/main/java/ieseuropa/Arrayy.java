@@ -23,7 +23,7 @@ public class Arrayy {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Integer[] numeros = { 5, 7, 3, 20, 12, 22 };
-		System.out.println("Ordenados de menor a mayor:");
+		System.out.println("Ordenados de menor a mayor: ");
 		menorMayor(numeros);
 		System.out.println(Arrays.toString(numeros));
 		media(numeros);
