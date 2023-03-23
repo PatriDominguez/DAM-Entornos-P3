@@ -3,15 +3,15 @@ package main.java.ieseuropa;
 import java.util.Arrays;
 
 public class Arrayy {
-	private static void menorMayor(int[] numeros) {
-		Arrays.sort(numeros); 
+	private static void menorMayor(Integer[] numerosArray) {
+		Arrays.sort(numerosArray); 
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numeros = { 1, 8, 8, 14, 32 };
-		menorMayor(numeros);
-		System.out.println(Arrays.toString(numeros));
+		Integer[] numerosArray = { 5, 7, 3, 20, 12, 22 };
+		menorMayor(numerosArray);
+		System.out.println(Arrays.toString(numerosArray));
 	}
 
 }
