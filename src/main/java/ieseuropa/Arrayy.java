@@ -1,9 +1,13 @@
 package main.java.ieseuropa;
 
+import java.util.Arrays;
+
 public class Arrayy {
-	
-	
-	public static void media(int[] numeros) {
+	private static void menorMayor(Integer[] numerosArray) {
+		Arrays.sort(numerosArray);
+	}
+
+	public static void media(Integer[] numeros) {
 
 		int mayor = 0;
 		int suma = 0;
@@ -16,11 +20,11 @@ public class Arrayy {
 		System.out.println("La media es " + suma / numeros.length);
 	}
 
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numeros = { 1, 8, 8, 14, 32 };
-		
+		Integer[] numeros = { 5, 7, 3, 20, 12, 22 };
+		menorMayor(numeros);
+		System.out.println(Arrays.toString(numeros));
 		media(numeros);
 	}
 
