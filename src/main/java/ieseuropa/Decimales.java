@@ -30,8 +30,8 @@ public class Decimales {
 
 	public static void main(String[] args) {
 		float num = 3.956f;
-		System.out.println(redondarAlza(num));
-		System.out.println(quitarDecimales(num));
+		System.out.println("Redondeo al alza: " + redondarAlza(num));
+		System.out.println("Quitar decimales: " + quitarDecimales(num));
 		float a = 2, b = 10, c = -8;
 		float[] soluciones = equacion(a, b, c);
 		System.out.println(Arrays.toString(soluciones));
