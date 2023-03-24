@@ -3,17 +3,27 @@ package main.java.ieseuropa;
 import java.util.Arrays;
 
 public class Arreglo {
-	
-	private static int calcularMaximo(Integer [] numeros) {
+
+	private static int calcularMinimo(Integer[] numeros) {
+		int menor = numeros[0];
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros[i] < menor) {
+				menor = numeros[i];
+			}
+		}
+		return menor;
+	}
+
+	private static int calcularMaximo(Integer[] numeros) {
 		int mayor = numeros[0];
-		for (int i=0; i<numeros.length; i++) {
+		for (int i = 0; i < numeros.length; i++) {
 			if (numeros[i] > mayor) {
 				mayor = numeros[i];
 			}
-		} 
+		}
 		return mayor;
 	}
-	
+
 	private static void menorMayor(Integer[] numeros) {
 		Arrays.sort(numeros);
 	}
@@ -30,7 +40,7 @@ public class Arreglo {
 		}
 		System.out.println("La media es " + suma / numeros.length);
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Integer[] numeros = { 5, 7, 3, 20, 12, 22 };
@@ -38,7 +48,7 @@ public class Arreglo {
 		menorMayor(numeros);
 		System.out.println(Arrays.toString(numeros));
 		media(numeros);
-		
+
 		System.out.println("El numero mayor es: " + calcularMaximo(numeros));
 	}
 
