@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Arreglo {
 
-	private static int calcularMinimo(Integer[] numeros) {
-		int menor = numeros[0];
-		for (int i = 0; i < numeros.length; i++) {
-			if (numeros[i] < menor) {
-				menor = numeros[i];
+	private static int calcularMinimo(Integer[] numerosArray) {
+		int menor = numerosArray[0];
+		for (int i = 0; i < numerosArray.length; i++) {
+			if (numerosArray[i] < menor) {
+				menor = numerosArray[i];
 			}
 		}
 		return menor;
@@ -50,6 +50,6 @@ public class Arreglo {
 		media(numeros);
 
 		System.out.println("El numero mayor es: " + calcularMaximo(numeros));
+		System.out.println("El numero menor es: " + calcularMinimo(numeros));
 	}
-
 }
