@@ -1,6 +1,6 @@
 package main.java.ieseuropa;
 
-public class Striing {
+public class CadenaDeTexto {
 
 	public static String mayus(String string) {
 
@@ -35,19 +35,19 @@ public class Striing {
 	public static void main(String[] args) {
 
 		String s1 = "Hola Mundo!";
-		String s2 = Striing.mayus(s1);
+		String s2 = CadenaDeTexto.mayus(s1);
 		System.out.println(s2);
 
 		String s3 = "ESTOY GRITANDO";
-		String s4 = Striing.minus(s3);
+		String s4 = CadenaDeTexto.minus(s3);
 		System.out.println(s4);
 
 		String s5 = "¡Hola!";
-		int size = Striing.longitud(s5);
+		int size = CadenaDeTexto.longitud(s5);
 		System.out.println(size);
 
 		String s6 = "abracadabra";
-		String s7 = Striing.ocurrenciaLetras(s6);
+		String s7 = CadenaDeTexto.ocurrenciaLetras(s6);
 		System.out.println(s7);
 
 	}
