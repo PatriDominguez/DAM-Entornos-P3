@@ -8,7 +8,7 @@ public class ArrayMayor {
 			if (numerosArray[i] > mayor) {
 				mayor = numerosArray[i];
 			}
-		}
+		} 
 		return mayor;
 	}
 
